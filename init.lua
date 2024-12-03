@@ -25,6 +25,8 @@ require("lazy").setup({
     -- tpope is a saint
     "tpope/vim-fugitive",
     "tpope/vim-dispatch",
+    -- git signs
+    "lewis6991/gitsigns.nvim",
     -- debugger
     "puremourning/vimspector",
 
@@ -70,6 +72,8 @@ require("lazy").setup({
     "sitiom/nvim-numbertoggle"
 
 })
+
+require('gitsigns').setup()
 
 require('nvim-treesitter.configs').setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
